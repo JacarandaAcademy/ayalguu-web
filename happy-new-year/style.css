@@ -1,0 +1,62 @@
+body {
+    background-color: #1c1c30;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+svg {
+    width: 90%;
+    height: 90%;
+    visibility: invisible;
+
+}
+
+.sparkle {
+    mix-blend-mode: luminosity;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#svgContainer {
+    width: 80%;
+    height: 80%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.text h1 {
+    font-size: 4em;
+    color: azure;
+}
+
+.text p {
+    color: goldenrod;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+.flex-container{
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+
+
+.flex-container> div{
+    
+    padding: 20px;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: cadetblue;
+    animation: colorchange 3s linear infinite;
+}
+
+@keyframes colorchange{
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: blueviolet;
+    }
+    50%{
+        background-color: brown;
+    }
+    75%{
+        background-color: coral;
+        width: 50px;
+    }
+    100%{
+        background-color: aqua;
+    }
+}
