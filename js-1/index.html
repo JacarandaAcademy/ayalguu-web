@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First JS code</title>
+    </head>
+    <body>
+        <div id="code" style="background-color: darksalmon;">
+            <label for="name">FirstName:</label>
+            <input type="text" id="fname">
+            <label for="name">LastName:</label>
+            <input type="text" id="lname">
+            <button type="button" onclick="printName()">Submit</button>
+        </div>
+        <div>
+            <input id="a" type="text"/> 
+            <input id="b" type="text"/>
+            <input id="c" type="text"/>
+            <button onclick="calcSum()">+ =</button>
+            <button onclick="calcsum()">- =</button>
+            <button onclick="Calcsum()">* =</button>
+            <button onclick="CalcSum()">/ =</button>
+            <input id="s" type="text"/>
+           
+        </div>
+        <script>
+            function printName(){
+                let fname = document.getElementById("fname").value;
+                let lname = document.getElementById("lname").value;
+                alert("Your full Name: "+fname +" " +lname);
+            }
+            function calcSum(){
+                const a=document.getElementById("a").value;
+                const b=document.getElementById("b").value;
+                const s=parseInt(a) + parseInt(b);
+                document.getElementById("s").value = s;
+            }
+            function calcsum(){
+                const a=document.getElementById("a").value;
+                const b=document.getElementById("b").value;
+                const s=parseInt(a) - parseInt(b);
+                document.getElementById("s").value = s;
+            }
+            function Calcsum(){
+                const a=document.getElementById("a").value;
+                const b=document.getElementById("b").value;
+                const s=parseInt(a) * parseInt(b);
+                document.getElementById("s").value = s;
+            }
+            function CalcSum(){
+                const a=document.getElementById("a").value;
+                const b=document.getElementById("b").value;
+                const s=parseInt(a) / parseInt(b);
+                document.getElementById("s").value = s;
+            }
+        </script>
+    </body>
+</html>

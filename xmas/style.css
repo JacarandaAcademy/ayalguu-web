@@ -49,7 +49,7 @@ body{
 
 .snow1{
     background-size: 70em;
-    animation: snowfall1 30s linear infinite;
+    animation: snowfall 211 30s linear infinite;
 }
 .snow2{
     background-size: 50em;
